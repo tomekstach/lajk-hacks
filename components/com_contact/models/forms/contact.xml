@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="contact" addrulepath="components/com_contact/models/rules" label="COM_CONTACT_CONTACT_DEFAULT_LABEL">
+		<field
+			name="spacer"
+			type="spacer"
+			label="COM_CONTACT_CONTACT_REQUIRED"
+			class="text"
+		/>
+
+		<field
+			name="contact_name"
+			type="text"
+			label="COM_CONTACT_CONTACT_EMAIL_NAME_LABEL"
+			description="COM_CONTACT_CONTACT_EMAIL_NAME_DESC"
+			id="contact-name"
+			size="30"
+			filter="string"
+			required="true"
+		/>
+
+		<field
+			name="contact_email"
+			type="email"
+			label="COM_CONTACT_EMAIL_LABEL"
+			description="COM_CONTACT_EMAIL_DESC"
+			id="contact-email"
+			size="30"
+			filter="string"
+			validate="contactemail"
+			autocomplete="email"
+			required="true"
+		/>
+
+		<field
+			name="contact_subject"
+			type="text"
+			label="COM_CONTACT_CONTACT_MESSAGE_SUBJECT_LABEL"
+			description="COM_CONTACT_CONTACT_MESSAGE_SUBJECT_DESC"
+			id="contact-emailmsg"
+			size="60"
+			filter="string"
+			validate="contactemailsubject"
+			required="false"
+		/>
+
+		<field
+			name="contact_message"
+			type="textarea"
+			label="COM_CONTACT_CONTACT_ENTER_MESSAGE_LABEL"
+			description="COM_CONTACT_CONTACT_ENTER_MESSAGE_DESC"
+			cols="50"
+			rows="10"
+			id="contact-message"
+			filter="safehtml"
+			validate="contactemailmessage"
+			required="true"
+		/>
+
+		<field
+			name="contact_zgoda_przetwarzanie"
+			type="checkbox"
+			label="COM_CONTACT_CONTACT_ZGODA_PRZETWARZANIE_LABEL"
+			description="COM_CONTACT_CONTACT_ZGODA_PRZETWARZANIE_DESC"
+			id="contact-zgoda-przetwarzanie"
+			default="0"
+		/>
+
+		<field
+			name="contact_zgoda_przesylanie"
+			type="checkbox"
+			label="COM_CONTACT_CONTACT_ZGODA_PRZESYLANIE_LABEL"
+			description="COM_CONTACT_CONTACT_ZGODA_PRZESYLANIE_DESC"
+			id="contact-zgoda-przesylanie"
+			default="0"
+		/>
+	</fieldset>
+
+	<fieldset name="captcha">
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_CONTACT_CAPTCHA_LABEL"
+			description="COM_CONTACT_CAPTCHA_DESC"
+			validate="captcha"
+			namespace="contact"
+		/>
+	</fieldset>
+</form>
