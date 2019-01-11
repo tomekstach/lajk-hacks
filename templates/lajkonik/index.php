@@ -38,7 +38,7 @@ else
 JHtml::_('bootstrap.framework');
 
 // Add Stylesheets
-$doc->addStyleSheet('templates/'.$this->template.'/css/template18.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/template19.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/template_responsive4.css');
 
 // Load optional RTL Bootstrap CSS
@@ -277,9 +277,9 @@ $logo = '<img src="templates/'.$this->template.'/images/logo_top.png" alt="'. $s
 				<a href="http://www.lajkonik-pik.pl/pl/wpisy/42-chleb-o-niskim-indeksie-glikemicznym" rel="nofollow" target="_self"><img src="images/niskie_IG.png" alt="Produkty o niskim IG" /></a>
 			</div>
 			<?php endif;?>
-			<div id="promo_button">
+			<!--<div id="promo_button">
 				<a href="http://www.lajkonik-pik.pl/pl/promocje" rel="nofollow" target="_self"><img src="images/promocje_new.png" alt="Promocje" /></a>
-			</div>
+			</div>-->
       <div id="nowosci_button">
 				<img src="images/nowosci.png" alt="Promocje" />
 			</div>
